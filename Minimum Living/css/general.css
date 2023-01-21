@@ -1,0 +1,75 @@
+/* /////////// */
+/* //////////////// color: #18191f; */
+/* //////////////// color: #818181; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-weight: 400;
+  /* overflow-y: hidden; */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  max-width: 144rem;
+  margin: 0 auto;
+  color: #18191f;
+}
+
+.container {
+  padding: 0 12rem;
+  margin-bottom: 9.6rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.heading-secondary {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 6.4rem;
+
+  text-transform: capitalize;
+  font-feature-settings: "salt" on, "liga" off;
+
+  /* Text / Gray 900 */
+
+  color: #18191f;
+}
+
+.border {
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #f4511e;
+}
+
+.btn {
+  background-color: #f4511e;
+  border: none;
+  color: #fff;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #62200c;
+  transition: all 0.4s;
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.lazy-img {
+  filter: blur(20px);
+}

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimum Living Cost</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- //////////// HERO //////////////////////// -->
+    <header class="hero container">
+      <div class="header">
+        <img class="logo" src="img/logo1.png" alt="Website logo" />
+        <nav class="main-nav">
+          <a class="nav-item active" href="#">Home</a>
+          <a class="nav-item" href="#">Landlords</a>
+          <a class="nav-item" href="#">Tenants</a>
+          <a class="nav-item" href="#">Contact Us</a>
+        </nav>
+        <img class="logo logo2" src="img/logo1.png" alt="Website logo" />
+      </div>
+      <div class="hero-content grid">
+        <h1 class="hero-text">
+          The most affortable place to stay in the san franciso bay area
+        </h1>
+        <div class="hero-side">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                class="map"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=lekki%20lagos&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+            </div>
+          </div>
+          <div class="contain-form">
+            <form class="form-contain">
+              <select name="type" class="select type">
+                <option class="option">All Type</option>
+                <option class="option">3 Bedroom Flat</option>
+                <option class="option">Duplex</option>
+                <option class="option">Sea Side</option>
+                <option class="option">Lakes</option>
+              </select>
+              <select name="neighborhood" class="select neighborhood">
+                <option class="option">Neighborhood</option>
+                <option class="option">Lekki</option>
+                <option class="option">Dubai</option>
+                <option class="option">Eko Atlantic city</option>
+                <option class="option">Abuja</option>
+              </select>
+              <button class="search">
+                <iconify-icon
+                  class="icon-hero"
+                  icon="tabler:search"
+                ></iconify-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <!-- //////////// MINIMUM //////////////////////// -->
+      <section class="minimum container section">
+        <h2 class="heading-secondary heading-min">
+          <span class="border">minimum living cost </span>
+          takes care of everything
+        </h2>
+        <div class="min-content grid">
+          <img
+            class="min-img"
+            src="img/sec1-img.jpg"
+            alt="picture of a home on screen"
+          />
+          <div class="min-side grid">
+            <p class="min-text">
+              <span class="min-icon"
+                ><iconify-icon
+                  class="icon"
+                  icon="ph:currency-circle-dollar"
+                ></iconify-icon></span
+              >Pay as Little as possible!
+            </p>
+            <p class="min-text">
+              <span class="min-icon"
+                ><iconify-icon
+                  class="icon"
+                  icon="ri:community-line"
+                ></iconify-icon></span
+              >Enjoy wisdom of community!
+            </p>
+            <p class="min-text">
+              <span class="min-icon"
+                ><iconify-icon
+                  class="icon"
+                  icon="ph:stack"
+                ></iconify-icon></span
+              >Let somebody else take care of Landlord!
+            </p>
+            <p class="min-text">
+              <span class="min-icon"
+                ><iconify-icon
+                  class="icon"
+                  icon="ri:plant-line"
+                ></iconify-icon></span
+              >Enjoy peaceful Environment!
+            </p>
+            <p class="min-text">
+              <span class="min-icon"
+                ><iconify-icon
+                  class="icon"
+                  icon="ri:shield-star-line"
+                ></iconify-icon></span
+              >Stay Safe! Save Money!
+            </p>
+            <p class="min-text">
+              <span class="min-icon"
+                ><iconify-icon
+                  class="icon"
+                  icon="ri:eye-2-line"
+                ></iconify-icon></span
+              >Pay for what you use !
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- //////////// LIST //////////////////////// -->
+      <section class="list container section">
+        <div class="list-top">
+          <h2 class="heading-secondary heading-list">
+            <span class="border">list </span>of properties
+          </h2>
+          <button class="btn list-btn">View All Property</button>
+        </div>
+        <ul class="lists grid">
+          <li class="list-block">
+            <img class="list-img" src="img/list/img1.jpg" alt="home image" />
+            <h4 class="list-text">
+              2578 Folsom street, san francisco, CA, 94110
+            </h4>
+            <p class="list-price">
+              <span class="list-detail">Private Room</span>$1200/month
+            </p>
+            <div class="list-more">
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="ion:bed"
+                  ></iconify-icon></span
+                >4
+              </p>
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="majesticons:bath-shower"
+                  ></iconify-icon></span
+                >2
+              </p>
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="fluent:resize-large-16-regular"
+                  ></iconify-icon></span
+                >2
+              </p>
+            </div>
+          </li>
+          <li class="list-block">
+            <img class="list-img" src="img/list/img2.jpg" alt="home image" />
+            <h4 class="list-text">
+              2578 Folsom street, san francisco, CA, 94110
+            </h4>
+            <p class="list-price">
+              <span class="list-detail">Private Room</span>$1200/month
+            </p>
+            <div class="list-more">
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="ion:bed"
+                  ></iconify-icon></span
+                >4
+              </p>
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="majesticons:bath-shower"
+                  ></iconify-icon></span
+                >2
+              </p>
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="fluent:resize-large-16-regular"
+                  ></iconify-icon></span
+                >2
+              </p>
+            </div>
+          </li>
+          <li class="list-block">
+            <img class="list-img" src="img/list/img3.jpg" alt="home image" />
+            <h4 class="list-text">
+              2578 Folsom street, san francisco, CA, 94110
+            </h4>
+            <p class="list-price">
+              <span class="list-detail">Private Room</span>$1200/month
+            </p>
+            <div class="list-more">
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="ion:bed"
+                  ></iconify-icon></span
+                >4
+              </p>
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="majesticons:bath-shower"
+                  ></iconify-icon></span
+                >2
+              </p>
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="fluent:resize-large-16-regular"
+                  ></iconify-icon></span
+                >2
+              </p>
+            </div>
+          </li>
+        </ul>
+        <ul class="lists grid">
+          <li class="list-block">
+            <img class="list-img" src="img/list/img4.jpg" alt="home image" />
+            <h4 class="list-text">
+              2578 Folsom street, san francisco, CA, 94110
+            </h4>
+            <p class="list-price">
+              <span class="list-detail">Private Room</span>$1200/month
+            </p>
+            <div class="list-more">
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="ion:bed"
+                  ></iconify-icon></span
+                >4
+              </p>
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="majesticons:bath-shower"
+                  ></iconify-icon></span
+                >2
+              </p>
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="fluent:resize-large-16-regular"
+                  ></iconify-icon></span
+                >2
+              </p>
+            </div>
+          </li>
+          <li class="list-block">
+            <img class="list-img" src="img/list/img5.jpg" alt="home image" />
+            <h4 class="list-text">
+              2578 Folsom street, san francisco, CA, 94110
+            </h4>
+            <p class="list-price">
+              <span class="list-detail">Private Room</span>$1200/month
+            </p>
+            <div class="list-more">
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="ion:bed"
+                  ></iconify-icon></span
+                >4
+              </p>
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="majesticons:bath-shower"
+                  ></iconify-icon></span
+                >2
+              </p>
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="fluent:resize-large-16-regular"
+                  ></iconify-icon></span
+                >2
+              </p>
+            </div>
+          </li>
+          <li class="list-block">
+            <img class="list-img" src="img/list/img6.jpg" alt="home image" />
+            <h4 class="list-text">
+              2578 Folsom street, san francisco, CA, 94110
+            </h4>
+            <p class="list-price">
+              <span class="list-detail">Private Room</span>$1200/month
+            </p>
+            <div class="list-more">
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="ion:bed"
+                  ></iconify-icon></span
+                >4
+              </p>
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="majesticons:bath-shower"
+                  ></iconify-icon></span
+                >2
+              </p>
+              <p class="more">
+                <span class="list-icon"
+                  ><iconify-icon
+                    class="icon-list"
+                    icon="fluent:resize-large-16-regular"
+                  ></iconify-icon></span
+                >2
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="space">
+          <div class="pagination">
+            <p class="pag-item first">First</p>
+            <p class="pag-item">1</p>
+            <p class="pag-item active">2</p>
+            <p class="pag-item">3</p>
+            <p class="pag-item next">Next</p>
+          </div>
+        </div>
+      </section>
+      <!-- //////////// OPTIONS //////////////////////// -->
+      <section class="options container section">
+        <div class="grid options-top">
+          <div class="imgs-option">
+            <div class="imgs1 grid">
+              <div class="img-side">
+                <img
+                  class="option-img op-img1"
+                  src="img/flexible/img1.jpg"
+                  alt="Flexibles leases image"
+                />
+                <p class="option-img-text">Flexible Leases</p>
+              </div>
+              <div class="img-side">
+                <img
+                  class="option-img op-img2"
+                  src="img/flexible/img2.jpg"
+                  alt="7-Day Happiness
+                Guaranteed image"
+                />
+                <p class="option-img-text">7-Day Happiness Guaranteed</p>
+              </div>
+            </div>
+            <div class="imgs2 grid">
+              <div class="img-side">
+                <img
+                  class="option-img op-img3"
+                  src="img/flexible/img3.jpg"
+                  alt="Monthly House
+                Cleaning image"
+                />
+                <p class="option-img-text">Monthly House Cleaning</p>
+              </div>
+              <div class="img-side">
+                <img
+                  class="option-img op-img4"
+                  src="img/flexible/img4.jpg"
+                  alt="Choose Your
+                Own Roommate image"
+                />
+                <p class="option-img-text">Choose Your Own Roommate</p>
+              </div>
+            </div>
+          </div>
+          <div class="option-text-side">
+            <h2 class="heading-secondary heading-option">
+              Flexibility and options to suit your lifestyle.
+            </h2>
+            <p class="option-text">
+              You need it? We got it. We make finding your next home easy,
+              comfortable, and simple. From our happiness guarantee to our
+              selective roommate finder option. We provide you the flexibility
+              that you most desire.
+            </p>
+            <button class="btn option-btn">Search Room</button>
+          </div>
+        </div>
+      </section>
+      <section class="add-property container section">
+        <p class="add-text">
+          Your property with us and be Confident that Your Room will be Filled
+          Out!
+        </p>
+        <aside class="form-side">
+          <h3 class="form-heading">Add A New Property</h3>
+          <form class="form grid">
+            <span class="form-item"
+              ><label class="label" for="name">Name</label>
+              <input
+                class="input"
+                type="text"
+                name="name"
+                placeholder="Enter Name"
+            /></span>
+            <span class="form-item"
+              ><label class="label" for="name">Address</label>
+              <input
+                class="input"
+                type="text"
+                name="address"
+                placeholder="Enter Address"
+            /></span>
+            <span class="form-item"
+              ><label class="label" for="name">Unit Number</label>
+              <input
+                class="input"
+                type="number"
+                name="Unit"
+                placeholder="Enter Unit"
+            /></span>
+            <span class="form-item"
+              ><label class="label" for="city">City</label>
+              <select name="city" class="select-add city">
+                <option value="" selected>Select City</option>
+              </select></span
+            >
+            <span class="form-item"
+              ><label class="label" for="state">State</label>
+              <select name="state" class="select-add state">
+                <option value="" selected>Select State</option>
+              </select></span
+            >
+            <span class="form-item"
+              ><label class="label" for="room">Room Type</label>
+              <select name="room" class="select-add room">
+                <option value="" selected>Select Room Type</option>
+              </select></span
+            >
+            <span class="form-item">
+              <label class="label" for="price">Price</label>
+              <input
+                class="input"
+                type="number"
+                name="price"
+                placeholder="Enter Price"
+            /></span>
+            <span class="form-item"
+              ><label class="label" for="room">Room Type</label>
+              <select name="room" class="select-add room">
+                <option value="" selected>Select Room Type</option>
+              </select></span
+            >
+            <span class="form-item description"
+              ><label class="label" for="description">Description</label>
+              <input
+                class="input"
+                type="text"
+                name="description"
+                placeholder="Enter Description"
+            /></span>
+            <span class="form-item form-img">
+              <label class="label img-label" for="img">Upload Photos:</label>
+              <div class="drop">
+                <p class="upload-heading">Drag your images here, or</p>
+                <p class="upload-text">Supported: JPG, JPEG, PNG</p>
+                <input
+                  type="file"
+                  class="input input-img"
+                  name="img"
+                  accept="image/*"
+                />
+              </div>
+            </span>
+          </form>
+          <div class="button">
+            <button class="btn add-btn">Add New Property</button>
+          </div>
+        </aside>
+      </section>
+      <!-- ///////////////////// Owner ///////////// -->
+      <section class="owners grid">
+        <aside class="owner-side">
+          <p class="owner-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel
+            pellentesque est. Curabitur at odio sit amet libero vulputate
+            efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam massa,
+            faucibus id pretium ac, mattis eu velit. Donec sed risus a lacus
+            fringilla finibus.<span class="quote"
+              ><iconify-icon icon="bxs:quote-alt-left"></iconify-icon
+            ></span>
+          </p>
+          <div class="owner">
+            <img class="owner-img" src="img/owner.jpg" alt="owner image" />
+            <p class="owner-name">
+              Harry Wilson<span class="owner-description">Property Owner</span>
+            </p>
+          </div>
+          <div class="dots">
+            <div class="dot active-dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </aside>
+        <div class="vid">
+          <video class="owners-vid" controls autoplay muted loop>
+            <source src="img/Bedroom-127112.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+    </main>
+    <!-- ///////////////////// Footer ///////////// -->
+    <footer class="container section">
+      <div class="footer grid">
+        <img class="logo logo-footer" src="img/logo1.png" alt="Website logo" />
+        <div class="contacts">
+          <address class="address">
+            <span class="footer-icon"
+              ><iconify-icon
+                icon="ic:baseline-location-on"
+              ></iconify-icon></span
+            >345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345
+          </address>
+          <div class="tels">
+            <p class="tel-p">
+              <span
+                ><iconify-icon
+                  class="footer-icon"
+                  icon="ic:baseline-call"
+                ></iconify-icon></span
+              ><a class="tel" href="tel:1234567890">(123) 456-7890</a>
+            </p>
+            <p class="tel-p">
+              <span
+                ><iconify-icon
+                  class="footer-icon"
+                  icon="material-symbols:print-rounded"
+                ></iconify-icon></span
+              ><a class="tel" href="tel:1234567890">(123) 456-7890</a>
+            </p>
+          </div>
+          <div class="socials">
+            <p class="socials-text">Social Media</p>
+            <iconify-icon
+              class="footer-icon"
+              icon="ri:facebook-box-fill"
+            ></iconify-icon>
+            <iconify-icon class="footer-icon" icon="mdi:twitter"></iconify-icon>
+            <iconify-icon
+              class="footer-icon"
+              icon="ri:linkedin-fill"
+            ></iconify-icon>
+            <iconify-icon class="footer-icon" icon="mdi:youtube"></iconify-icon>
+            <iconify-icon
+              class="footer-icon"
+              icon="uil:instagram-alt"
+            ></iconify-icon>
+            <iconify-icon
+              class="footer-icon"
+              icon="mdi:google-plus"
+            ></iconify-icon>
+            <iconify-icon
+              class="footer-icon"
+              icon="mdi:pinterest"
+            ></iconify-icon>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-nav">
+            <a href="" class="footer-link">About Us</a>
+            <a href="" class="footer-link">Contact Us</a>
+            <a href="" class="footer-link">Help</a>
+            <a href="" class="footer-link">Privacy Policy</a>
+            <a href="" class="footer-link">Disclaimer</a>
+          </div>
+          <p class="copy-right">
+            Copyright © <span class="year">2020</span> Minimumlivingcost. All
+            rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
