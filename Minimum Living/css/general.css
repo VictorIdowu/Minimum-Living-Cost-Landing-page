@@ -12,7 +12,7 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   font-weight: 400;
-  /* overflow-y: hidden; */
+  overflow-x: hidden;
 }
 
 body {
@@ -20,6 +20,7 @@ body {
   max-width: 144rem;
   margin: 0 auto;
   color: #18191f;
+  overflow-x: hidden;
 }
 
 .container {
@@ -72,4 +73,8 @@ body {
 
 .lazy-img {
   filter: blur(20px);
+}
+
+.hidden {
+  display: none;
 }

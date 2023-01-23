@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <script defer src="script.js"></script>
   </head>
@@ -32,8 +33,20 @@
           <a class="nav-item active" href="#">Home</a>
           <a class="nav-item" href="#">Landlords</a>
           <a class="nav-item" href="#">Tenants</a>
-          <a class="nav-item" href="#">Contact Us</a>
+          <a class="nav-item" href="#">ContactUs</a>
         </nav>
+
+        <button class="btn-mobile-nav">
+          <iconify-icon
+            class="icon-mobile-nav icon-mobile-nav-1"
+            icon="mingcute:menu-fill"
+          ></iconify-icon>
+          <iconify-icon
+            class="icon-mobile-nav icon-mobile-nav-2 hidden"
+            icon="ic:round-close"
+          ></iconify-icon>
+        </button>
+
         <img class="logo logo2" src="img/logo1.png" alt="Website logo" />
       </div>
       <div class="hero-content grid">
@@ -46,7 +59,7 @@
               <iframe
                 class="map"
                 id="gmap_canvas"
-                src="https://maps.google.com/maps?q=lekki%20lagos&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=lagos&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 frameborder="0"
                 scrolling="no"
                 marginheight="0"
@@ -152,7 +165,7 @@
           <h2 class="heading-secondary heading-list">
             <span class="border">list </span>of properties
           </h2>
-          <button class="btn list-btn">View All Property</button>
+          <button class="btn list-btn">View All Properties</button>
         </div>
         <ul class="lists grid">
           <li class="list-block">
@@ -261,7 +274,7 @@
             </div>
           </li>
         </ul>
-        <ul class="lists grid">
+        <ul class="lists lists-2 grid">
           <li class="list-block">
             <img class="list-img" src="img/list/img4.jpg" alt="home image" />
             <h4 class="list-text">
@@ -451,6 +464,7 @@
                 type="text"
                 name="name"
                 placeholder="Enter Name"
+                required
             /></span>
             <span class="form-item"
               ><label class="label" for="name">Address</label>
@@ -459,6 +473,7 @@
                 type="text"
                 name="address"
                 placeholder="Enter Address"
+                required
             /></span>
             <span class="form-item"
               ><label class="label" for="name">Unit Number</label>
@@ -467,6 +482,7 @@
                 type="number"
                 name="Unit"
                 placeholder="Enter Unit"
+                required
             /></span>
             <span class="form-item"
               ><label class="label" for="city">City</label>
@@ -493,6 +509,7 @@
                 type="number"
                 name="price"
                 placeholder="Enter Price"
+                required
             /></span>
             <span class="form-item"
               ><label class="label" for="room">Room Type</label>
@@ -507,6 +524,7 @@
                 type="text"
                 name="description"
                 placeholder="Enter Description"
+                required
             /></span>
             <span class="form-item form-img">
               <label class="label img-label" for="img">Upload Photos:</label>
@@ -617,11 +635,11 @@
         </div>
         <div class="footer-bottom">
           <div class="footer-nav">
-            <a href="" class="footer-link">About Us</a>
-            <a href="" class="footer-link">Contact Us</a>
-            <a href="" class="footer-link">Help</a>
-            <a href="" class="footer-link">Privacy Policy</a>
-            <a href="" class="footer-link">Disclaimer</a>
+            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Contact Us</a>
+            <a href="#" class="footer-link">Help</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Disclaimer</a>
           </div>
           <p class="copy-right">
             Copyright © <span class="year">2020</span> Minimumlivingcost. All

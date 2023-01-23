@@ -14,7 +14,7 @@
       rgba(51, 51, 51, 0.4),
       rgba(37, 35, 35, 0.1)
     ),
-    url("/img/hero-img.jpg");
+    url('/img/hero-img.jpg');
   width: auto;
   height: auto;
 }
@@ -35,22 +35,11 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.sticky {
-  position: fixed;
-  top: 2rem;
-  right: 10rem;
-  background-color: rgba(24, 25, 31, 0.7);
-  box-shadow: 0px 34.06928634643555px 36.19861602783203px 0px
-    rgba(0, 0, 0, 0.1337);
-  padding: 1rem 4rem;
-  border-radius: 9rem;
-  z-index: 9999;
-}
-
 .main-nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 5.6rem;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .nav-item:link,
@@ -60,6 +49,7 @@
   text-decoration: none;
   padding-bottom: 2.2rem;
   font-weight: 400;
+  width: fit-content;
 }
 
 .nav-item:hover,
@@ -75,14 +65,31 @@
   font-weight: 500;
 }
 
-/* .sticky > .nav-item:link,
-.nav-item:visited {
-  color: #18191f;
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
 }
 
-.sticky > .active {
-  border-bottom: 2px solid #18191f;
-} */
+.icon-mobile-nav {
+  font-size: 4.8rem;
+  color: #fff;
+}
+
+.sticky {
+  position: fixed;
+  top: 2rem;
+  left: 96vw;
+  transform: translateX(-100%);
+  background-color: rgba(24, 25, 31, 0.7);
+  box-shadow: 0px 34.06928634643555px 36.19861602783203px 0px
+    rgba(0, 0, 0, 0.1337);
+  padding: 1rem 4rem;
+  border-radius: 9rem;
+  z-index: 9999;
+}
 
 .hero-content {
   padding: 8rem 0;
@@ -192,7 +199,7 @@
   line-height: 3.5rem;
   text-align: left;
   text-transform: capitalize;
-  font-feature-settings: "salt" on, "liga" off;
+  font-feature-settings: 'salt' on, 'liga' off;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -225,7 +232,7 @@
 
 .list {
   background: #f5f5f5;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .list-top {
@@ -309,18 +316,21 @@
 
 .list-more {
   font-weight: 700;
-  font-size: 18.0993px;
-  line-height: 24px;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   /* identical to box height */
   letter-spacing: -0.454803px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: end;
 }
 
 .more {
-  padding: 2rem 4rem;
+  padding: 2rem 0;
   border: 1px solid #e4e4e4;
   display: flex;
+  justify-content: center;
+  width: 100%;
   gap: 1rem;
 }
 
@@ -427,7 +437,7 @@
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 3.2rem;
-  font-feature-settings: "salt" on, "liga" off;
+  font-feature-settings: 'salt' on, 'liga' off;
   margin-top: 1.6rem;
 }
 
@@ -438,8 +448,7 @@
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 2rem;
-  text-align: center;
-  font-feature-settings: "salt" on, "liga" off;
+  font-feature-settings: 'salt' on, 'liga' off;
 }
 
 /* /////// FORM SIDE /////// */
@@ -451,7 +460,7 @@
   /* identical to box height, or 133% */
   text-align: center;
   text-transform: capitalize;
-  font-feature-settings: "salt" on, "liga" off;
+  font-feature-settings: 'salt' on, 'liga' off;
   margin: 10rem 0 4rem 0;
 }
 
@@ -463,7 +472,7 @@
 }
 
 .form-heading {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 2.8rem;
   line-height: 3.2rem;
@@ -487,14 +496,20 @@
 
 .label {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 1.6rem;
   line-height: 2.4rem;
   letter-spacing: 0.2px;
   color: #252b42;
+  transition: all 0.6s;
+}
+
+.active > .label {
+  transform: scale(0.9);
+  transition: all 0.6s;
 }
 
 .label:not(.img-label)::after {
-  content: " *";
+  content: ' *';
   color: #f4511e;
 }
 
@@ -562,7 +577,7 @@
 }
 
 .upload-heading::after {
-  content: " browse";
+  content: ' browse';
   color: #f4511e;
 }
 
@@ -623,7 +638,7 @@
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 3.6rem;
-  font-feature-settings: "salt" on, "liga" off;
+  font-feature-settings: 'salt' on, 'liga' off;
 }
 
 .quote {
@@ -653,7 +668,7 @@
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 2.8rem;
-  font-feature-settings: "salt" on, "liga" off;
+  font-feature-settings: 'salt' on, 'liga' off;
   color: #f4511e;
   display: flex;
   flex-direction: column;
@@ -663,7 +678,7 @@
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2.6rem;
-  font-feature-settings: "salt" on, "liga" off;
+  font-feature-settings: 'salt' on, 'liga' off;
   color: #18191f;
 }
 
